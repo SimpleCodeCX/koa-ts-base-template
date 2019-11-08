@@ -21,18 +21,4 @@ router.prefix('/');
  */
 router.get('/test', testController.getTestList);
 
-
-/**
- * @api {POST} /v1/test 上传excel文件
- * @apiDescription 上传excel文件
- * @apiVersion 1.0.0
- * @apiName uploadExcel
- * @apiGroup test
- *
- * @apiHeader {String} accesstoken token
- *
- * @apiParam (FormData) {file} excel_data excel文件
- */
-router.post('/test', testController.uploadExcel);
-
 export default router;
