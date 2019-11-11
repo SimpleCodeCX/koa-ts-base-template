@@ -11,17 +11,11 @@
     "strict": false,
     "esModuleInterop": true,
     "paths": {
-      "@common": [
-        "../common"
-      ],
-      "@common/*": [
-        "../common/*"
-      ],
       "@model/*": [
         "./src/app/core/model/*"
       ],
       "@controller/*": [
-        "src/app/controller/*"
+        "./src/app/core/controller/*"
       ],
       "@bll/*": [
         "./src/app/core/bll/*"

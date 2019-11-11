@@ -1,2 +1,2 @@
-import test from './test';
-export { test };
+import user from './user';
+export { user };

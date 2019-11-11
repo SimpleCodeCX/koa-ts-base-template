@@ -1,9 +1,9 @@
 import Router from 'koa-router';
-import { test } from './v1/index';
+import { user } from './v1/index';
 const router = new Router();
 router.prefix('/v1/');
 
-router.use(test.routes(), test.allowedMethods());
+router.use(user.routes(), user.allowedMethods());
 
 router.get('/', async ctx => {
   ctx.body = 'api/v1';

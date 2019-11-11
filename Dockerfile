@@ -1,16 +1,16 @@
 FROM node:10
 
-MAINTAINER "Tan Guanghua" "guanghua.tan@desay-svautomotive.com"
+MAINTAINER "Simple" "248200851@qq.com"
 
-ADD ./dist /rsp-server/
+ADD ./dist /koa-ts-api-server/
 
-WORKDIR /rsp-server
+WORKDIR /koa-ts-api-server
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
-RUN npm config set registry http://10.219.107.16:8081/repository/itti-npm-registry/
+RUN npm config set registry http://r.cnpmjs.org/
 
-RUN cd server && npm install
+RUN cd koa-ts-api-server && npm install
 
 EXPOSE 8080
 
