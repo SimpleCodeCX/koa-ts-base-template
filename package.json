@@ -1,5 +1,5 @@
 {
-  "name": "koa-ts-template",
+  "name": "koa-ts-base-template",
   "version": "1.0.0",
   "license": "ISC",
   "author": "Simple",
@@ -47,7 +47,6 @@
     "@typescript-eslint/eslint-plugin": "^2.4.0",
     "@typescript-eslint/parser": "^2.4.0",
     "apidoc": "^0.17.7",
-    "cross-env": "^6.0.3",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.18.2",
