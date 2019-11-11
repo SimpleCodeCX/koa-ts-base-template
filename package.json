@@ -14,7 +14,8 @@
     "rm-dist": "ts-node rm-dist.ts",
     "copy-static": "ts-node copyStatic.ts",
     "lint": "eslint src test --ext .ts",
-    "lint:fix": "eslint src test --ext .ts --fix"
+    "lint:fix": "eslint src test --ext .ts --fix",
+    "prepush": "npm run lint"
   },
   "keywords": [
     "koa",
@@ -50,6 +51,7 @@
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.18.2",
+    "husky": "^2.7.0",
     "jest": "24.1.0",
     "nodemon": "^1.19.3",
     "shelljs": "^0.8.3",
