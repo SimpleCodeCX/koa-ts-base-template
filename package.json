@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -e ts --exec ts-node -r tsconfig-paths/register src/main.ts",
-    "prod": "node -r tsconfig-paths/register ./dist/src/main.js",
+    "prod": "node -r tsconfig-paths/register ./src/main.js",
     "test": "jest --runInBand",
     "build": "npm run rm-dist && npm run build-ts && npm run copy-static",
     "build-ts": "tsc -b ./  --verbose",
