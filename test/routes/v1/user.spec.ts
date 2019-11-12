@@ -21,7 +21,7 @@ describe('开始测试 user 接口', () => {
     const result = await
       request.get('/api/v1/users')
         .expect(200);
-    const resultJson = JSON.parse(result.text);
+    const resultJson: Array<UserResModel> = JSON.parse(result.text);
     resultJson.length.should.aboveOrEqual(4);
     userList = resultJson;
   });
@@ -30,7 +30,7 @@ describe('开始测试 user 接口', () => {
     const result = await
       request.get('/api/v1/users?age=18')
         .expect(200);
-    const resultJson = JSON.parse(result.text);
+    const resultJson: Array<UserResModel> = JSON.parse(result.text);
     resultJson.length.should.aboveOrEqual(2);
     userList = resultJson;
   });
@@ -40,7 +40,7 @@ describe('开始测试 user 接口', () => {
     const result = await
       request.get(`/api/v1/users/${user.userName}`)
         .expect(200);
-    const resultJson = JSON.parse(result.text);
+    const resultJson: UserResModel = JSON.parse(result.text);
     resultJson.should.eql(user);
   });
 });

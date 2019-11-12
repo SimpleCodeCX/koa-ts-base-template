@@ -29,7 +29,7 @@ router.get('/users', userController.getUserList);
  *
  * @apiHeader {String} accesstoken token
  *
- * @apiParam (query) {string} user_name 用户名
+ * @apiParam (path) {string} user_name 用户名
  */
 router.get('/users/:user_name', userController.getByName);
 
