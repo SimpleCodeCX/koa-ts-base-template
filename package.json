@@ -11,8 +11,9 @@
     "test": "jest --runInBand",
     "build": "npm run rm-dist && npm run build-ts && npm run copy-static",
     "build-ts": "tsc -b ./  --verbose",
-    "rm-dist": "ts-node rm-dist.ts",
     "copy-static": "ts-node copyStatic.ts",
+    "rm-dist": "ts-node rm-dist.ts",
+    "apidoc": "apidoc -i ./src/app/routes -o ./src/app/apidoc/dist -c ./src/app/apidoc",
     "lint": "eslint src test --ext .ts",
     "lint:fix": "eslint src test --ext .ts --fix",
     "prepush": "npm run lint"
