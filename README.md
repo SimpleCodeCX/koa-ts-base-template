@@ -33,14 +33,14 @@ This is a basic of koa project structure, integrated with ts.
  npm install
 ```
 
-## In development mode
+## In Development Mode
 
 ```javascript
  cd myProject
  npm run dev
 ```
 
-## In porduction mode
+## In Porduction Mode
 
 ```javascript
  npm run build
@@ -48,7 +48,7 @@ This is a basic of koa project structure, integrated with ts.
  npm run prod
 ```
 
-## Run in docker
+## Run In Docker
 
 ```javascript
  cd myProject
@@ -68,6 +68,8 @@ or
 
 ## Test
 
+Unit test can be used to ensure the quality of the code.
+
 ```javascript
  cd myProject
  npm run test
@@ -76,6 +78,5 @@ or
 ## Generate Apidoc
 
 ```javascript
- cd myProject/src/app/apidoc
- generate-apidoc.cmd  # The api doc is generated in myProject/src/app/apidoc/dist
+ npm run apidoc
 ```
